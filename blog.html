@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Elkostart - Web Design Insights & Tips</title>
+  <meta name="description" content="Explore our blog for web design tips, digital marketing insights, and business growth strategies to help your online presence thrive.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="blog.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">E</span>
+        <span class="logo-text">elkostart</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="work.html">Work</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn-primary nav-cta">Get Your Free Proposal</a>
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <div class="container">
+      <div class="blog-hero-content">
+        <span class="section-label">Our Blog</span>
+        <h1 class="page-title">Insights & <span class="gradient-text">Resources</span></h1>
+        <p class="page-subtitle">Actionable tips, industry insights, and strategies to help your business thrive online. Stay ahead with the latest in web design, development, and digital marketing.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-filters">
+    <div class="container">
+      <div class="filters-wrapper">
+        <div class="category-filters">
+          <button class="filter-btn active" data-category="all">All Posts</button>
+          <button class="filter-btn" data-category="design">Design</button>
+          <button class="filter-btn" data-category="development">Development</button>
+          <button class="filter-btn" data-category="marketing">Marketing</button>
+          <button class="filter-btn" data-category="business">Business</button>
+        </div>
+        <div class="search-box">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" placeholder="Search articles..." id="blog-search">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-featured">
+    <div class="container">
+      <div class="featured-post">
+        <div class="featured-image">
+          <div class="featured-placeholder"></div>
+          <span class="post-category">Featured</span>
+        </div>
+        <div class="featured-content">
+          <div class="post-meta">
+            <span class="post-date">December 5, 2025</span>
+            <span class="meta-separator"></span>
+            <span class="read-time">8 min read</span>
+          </div>
+          <h2 class="featured-title">The Complete Guide to Building a High-Converting Website in 2025</h2>
+          <p class="featured-excerpt">Learn the essential elements that transform a basic website into a powerful customer acquisition machine. We break down the strategies that consistently deliver results.</p>
+          <a href="#" class="btn btn-primary">Read Article</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-grid-section">
+    <div class="container">
+      <div class="blog-grid">
+        <article class="blog-card" data-category="design">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-1"></div>
+              <span class="post-category">Design</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">December 2, 2025</span>
+                <span class="read-time">5 min read</span>
+              </div>
+              <h3 class="card-title">10 Web Design Trends That Will Dominate 2025</h3>
+              <p class="card-excerpt">From AI-powered personalization to micro-interactions, discover the design trends shaping the future of the web.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="development">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-2"></div>
+              <span class="post-category">Development</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">November 28, 2025</span>
+                <span class="read-time">7 min read</span>
+              </div>
+              <h3 class="card-title">Why Website Speed Matters More Than Ever</h3>
+              <p class="card-excerpt">Every second of load time costs you customers. Learn how to optimize your site for lightning-fast performance.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="marketing">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-3"></div>
+              <span class="post-category">Marketing</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">November 22, 2025</span>
+                <span class="read-time">6 min read</span>
+              </div>
+              <h3 class="card-title">SEO Fundamentals Every Business Owner Should Know</h3>
+              <p class="card-excerpt">Master the basics of search engine optimization and start driving organic traffic to your website today.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="business">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-4"></div>
+              <span class="post-category">Business</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">November 18, 2025</span>
+                <span class="read-time">4 min read</span>
+              </div>
+              <h3 class="card-title">How to Calculate the ROI of Your Website Redesign</h3>
+              <p class="card-excerpt">A practical framework for measuring the business impact of your website investment.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="design">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-2"></div>
+              <span class="post-category">Design</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">November 12, 2025</span>
+                <span class="read-time">5 min read</span>
+              </div>
+              <h3 class="card-title">The Psychology of Color in Web Design</h3>
+              <p class="card-excerpt">Understanding how colors influence user behavior and how to choose the right palette for your brand.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="development">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-1"></div>
+              <span class="post-category">Development</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">November 5, 2025</span>
+                <span class="read-time">8 min read</span>
+              </div>
+              <h3 class="card-title">Mobile-First Development: A Complete Guide</h3>
+              <p class="card-excerpt">Learn why designing for mobile first leads to better user experiences across all devices.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="marketing">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-3"></div>
+              <span class="post-category">Marketing</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">October 30, 2025</span>
+                <span class="read-time">6 min read</span>
+              </div>
+              <h3 class="card-title">Creating Content That Converts: A Copywriting Guide</h3>
+              <p class="card-excerpt">Write website copy that speaks to your audience and drives them to take action.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="business">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-4"></div>
+              <span class="post-category">Business</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">October 25, 2025</span>
+                <span class="read-time">5 min read</span>
+              </div>
+              <h3 class="card-title">When Is the Right Time to Redesign Your Website?</h3>
+              <p class="card-excerpt">Key indicators that tell you it's time to invest in a fresh, modern website.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+
+        <article class="blog-card" data-category="design">
+          <a href="#" class="card-link">
+            <div class="card-image">
+              <div class="card-placeholder gradient-1"></div>
+              <span class="post-category">Design</span>
+            </div>
+            <div class="card-content">
+              <div class="post-meta">
+                <span class="post-date">October 18, 2025</span>
+                <span class="read-time">4 min read</span>
+              </div>
+              <h3 class="card-title">Typography Best Practices for the Modern Web</h3>
+              <p class="card-excerpt">How to choose and pair fonts that enhance readability and strengthen your brand identity.</p>
+              <span class="read-more">Read More
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn pagination-next">
+          Next
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-newsletter">
+    <div class="container">
+      <div class="newsletter-card">
+        <div class="newsletter-content">
+          <h2 class="newsletter-title">Stay Updated</h2>
+          <p class="newsletter-text">Get the latest insights, tips, and resources delivered straight to your inbox. No spam, just valuable content.</p>
+        </div>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">E</span>
+            <span class="logo-text">elkostart</span>
+          </a>
+          <p class="footer-tagline">We build websites that actually get you customers.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="work.html">Work</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="index.html#testimonials">Testimonials</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Web Design</a></li>
+              <li><a href="services.html">E-commerce</a></li>
+              <li><a href="services.html">Conversion Optimization</a></li>
+              <li><a href="services.html">Ongoing Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Dribbble</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Elkostart. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="blog.js"></script>
+</body>
+
+</html>
