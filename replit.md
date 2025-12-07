@@ -8,8 +8,10 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 /
 ├── index.html      # Main homepage with all sections
 ├── about.html      # About page (team, values, approach)
+├── services.html   # Services page (offerings, packages, FAQ)
 ├── style.css       # Comprehensive CSS with dark theme, animations
 ├── about.css       # Additional styles for About page
+├── services.css    # Additional styles for Services page
 ├── script.js       # JavaScript for animations and interactivity
 └── replit.md       # This documentation file
 ```
