@@ -189,6 +189,12 @@ body {
   letter-spacing: 0.05em;
 }
 
+.logo-image {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
