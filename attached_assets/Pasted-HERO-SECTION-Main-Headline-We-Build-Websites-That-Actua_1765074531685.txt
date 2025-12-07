@@ -1,0 +1,133 @@
+HERO SECTION
+Main Headline:
+"We Build Websites That Actually Get You Customers"
+Subheadline:
+"Fresh perspective. Modern approach. Real results. We're a new agency hungry to prove ourselves—which means you get premium quality at competitive rates, with the dedication of a team that treats your project like it's our own."
+Primary CTA Button:
+"Get Your Free Proposal"
+Secondary CTA Button:
+"See Our Approach"
+Stats Bar (below CTAs):
+
+100% Client Satisfaction
+Fast 2-Week Turnaround
+Modern Design & Tech
+
+
+PROBLEM SECTION (Left Gold Box)
+Headline:
+"Your Website Is Costing You Customers Every Single Day"
+Body:
+"A slow, outdated, or confusing website doesn't just look bad—it's actively losing you money. Visitors leave in seconds. Competitors steal your potential customers. Your business deserves better than a website that works against you."
+CTA Button:
+"Let's Fix This"
+
+SOLUTION SECTION (Right Gold Box - Dark background)
+Headline:
+"A Website That Works As Hard As You Do"
+Body:
+"What if your website actually brought customers to you? We build modern, high-performance websites that convert visitors into clients, load lightning-fast, and make your business look like the premium choice. No bloat. No outdated designs. Just results."
+CTA Button:
+"See Our Work"
+
+PORTFOLIO PREVIEW SECTION
+Small Label Above:
+"OUR SHOWCASE"
+Headline:
+"Built With Purpose. Designed to Convert."
+Subheadline:
+"Every project starts with your goals. We don't just make pretty websites—we build strategic digital experiences that drive real business growth. Here's what we've created."
+Project Card 1:
+
+Project Name: (Your first personal project name)
+Brief Description: "Full-featured e-commerce platform with custom checkout flow and inventory management"
+Tech/Features: React • Stripe Integration • Responsive
+Tag: E-COMMERCE
+
+Project Card 2:
+
+Project Name: (Your second personal project name)
+Brief Description: "Modern landing page with dynamic animations and conversion-optimized layout"
+Tech/Features: Next.js • Animations • SEO Optimized
+Tag: LANDING PAGE
+
+CTA Button Below:
+"View Full Projects"
+
+SERVICES PREVIEW SECTION
+Small Label Above:
+"WHAT WE DO"
+Headline:
+"Services Built Around Your Success"
+Subheadline:
+"From design to launch and beyond, we handle everything you need to establish a powerful online presence that drives growth."
+Service Card 1: Website Design & Development
+"Custom websites built for speed, conversions, and growth. Modern design that makes you stand out."
+Service Card 2: E-Commerce Solutions
+"Complete online stores with secure payments, inventory management, and seamless user experience."
+Service Card 3: Branding & Identity
+"Cohesive visual identity that makes your business memorable and builds instant trust."
+Service Card 4: SEO & Performance
+"Get found on Google. We optimize every site for search engines and lightning-fast loading."
+Service Card 5: Maintenance & Support
+"Keep your site running smoothly with ongoing updates, security, and technical support."
+CTA Button:
+"Explore All Services"
+
+TESTIMONIAL SECTION
+Headline:
+"Don't Take Our Word For It"
+Subheadline:
+"Here's what people are saying about working with us"
+Since you're new, you might not have testimonials yet. Here are 3 options:
+Option A - Be Honest (RECOMMENDED):
+"We're building our portfolio and would love to build yours too. As a new agency, we're offering competitive rates and bringing fresh energy to every project. Your success becomes our showcase."
+CTA: "Be Our Next Success Story"
+Option B - Use Beta Testimonials:
+If friends/family tested your personal projects, use those:
+
+"The attention to detail was incredible. My site loads faster than any competitor."
+"Modern, clean, and exactly what I envisioned. Communication was flawless throughout."
+"They delivered ahead of schedule and the final product exceeded expectations."
+
+Option C - Skip testimonials entirely and replace with a "Why Choose Us" section instead (see below)
+
+WHY CHOOSE US SECTION (Alternative to testimonials)
+Headline:
+"Why Work With A New Agency?"
+Reason 1: Hungry & Dedicated
+"We treat every project like it's our breakthrough opportunity—because it is. You get our absolute best work, not assembly-line treatment."
+Reason 2: Modern Approach
+"We're not stuck in outdated methods. We use cutting-edge tech, current design trends, and proven strategies that actually work in 2024."
+Reason 3: Competitive Pricing
+"Building our portfolio means better rates for you. Get premium quality without the premium agency markup."
+Reason 4: Direct Communication
+"No account managers. No middlemen. You work directly with the people building your site."
+
+PROCESS SECTION
+Small Label Above:
+"HOW IT WORKS"
+Headline:
+"Your Path to a Better Website"
+Subheadline:
+"Simple, transparent, and designed to get you results fast"
+Step 01: Discovery Call
+"We start with a free consultation to understand your business, goals, and vision. No sales pressure—just honest conversation about what you need."
+Step 02: Strategy & Design
+"We create a custom plan and design mockups tailored to your brand. You see exactly what you're getting before we build a single line of code."
+Step 03: Development & Testing
+"We build your site with clean code, test everything thoroughly, and keep you updated every step of the way."
+Step 04: Launch & Support
+"We handle the technical launch and provide training so you can manage your site. Plus, we're always here if you need us."
+
+FINAL CTA SECTION
+Headline:
+"Ready to Transform Your Online Presence?"
+Subheadline:
+"Let's talk about your project. No obligation, no pressure—just an honest conversation about how we can help your business grow."
+Primary CTA Button:
+"Get Your Free Proposal"
+Secondary Text Below:
+"Typically respond within 24 hours • Free consultation • No commitment required"
+Optional Trust Line:
+"Limited spots available—we only take on projects we can give 100% attention to."
