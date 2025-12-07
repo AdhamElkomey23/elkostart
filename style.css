@@ -321,8 +321,8 @@ body {
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 50% at 80% 50%, rgba(0, 212, 255, 0.08), transparent 60%),
-    linear-gradient(180deg, #ffffff 0%, #f8fbff 50%, #f0f8ff 100%);
+    radial-gradient(ellipse 80% 50% at 80% 50%, rgba(0, 212, 255, 0.06), transparent 60%),
+    linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
   pointer-events: none;
 }
 
