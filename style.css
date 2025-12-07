@@ -732,30 +732,54 @@ body {
 
 .problem-solution {
   padding: 140px 0;
+  background: #ffffff;
 }
 
 .section-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 100px;
+  gap: 60px;
 }
 
 .problem-content,
 .solution-content {
-  padding: 50px;
-  border-radius: 0;
+  padding: 48px;
+  border-radius: var(--radius-lg);
 }
 
 .problem-content {
-  background: linear-gradient(135deg, rgba(255, 107, 107, 0.08) 0%, transparent 100%);
-  border: 1px solid rgba(255, 107, 107, 0.2);
-  border-radius: var(--radius-lg);
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+}
+
+.problem-content .section-title {
+  color: #2d3748;
 }
 
 .solution-content {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, transparent 100%);
-  border: 1px solid var(--border-accent);
-  border-radius: var(--radius-lg);
+  background: var(--navy);
+  border: none;
+  box-shadow: 0 8px 32px rgba(26, 35, 50, 0.15);
+}
+
+.solution-content .section-title {
+  color: #ffffff;
+}
+
+.solution-content .section-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.solution-content .btn-primary {
+  background: #ffffff;
+  color: var(--navy);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+}
+
+.solution-content .btn-primary:hover {
+  background: var(--cyan-primary);
+  color: #ffffff;
 }
 
 @media (max-width: 900px) {
@@ -767,7 +791,7 @@ body {
 
 .portfolio {
   padding: 140px 0;
-  background: var(--bg-secondary);
+  background: #f8f9fa;
 }
 
 .portfolio-grid {
@@ -892,22 +916,24 @@ body {
 
 .services {
   padding: 140px 0;
+  background: #ffffff;
 }
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
+  gap: 24px;
 }
 
 .service-card {
   position: relative;
-  padding: 50px 40px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid var(--border-color);
+  padding: 40px 32px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
   overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
 }
 
 .service-card::before {
@@ -928,9 +954,10 @@ body {
 }
 
 .service-card:hover {
-  border-color: var(--border-accent);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(0, 212, 255, 0.15);
-  transform: translateY(-8px);
+  background: #ffffff;
+  border-color: #d0d0d0;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
 }
 
 .service-card.featured {
@@ -956,20 +983,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(79, 195, 247, 0.08) 100%);
-  border: 2px solid var(--border-accent);
-  border-radius: var(--radius-lg);
-  margin-bottom: 32px;
-  color: var(--cyan-primary);
+  width: 64px;
+  height: 64px;
+  background: var(--navy);
+  border: none;
+  border-radius: var(--radius-md);
+  margin-bottom: 28px;
+  color: #ffffff;
   transition: all var(--transition-base);
 }
 
 .service-card:hover .service-icon {
-  background: linear-gradient(135deg, rgba(0, 212, 255, 0.25) 0%, rgba(79, 195, 247, 0.15) 100%);
-  transform: scale(1.1);
-  border-color: var(--cyan-primary);
+  background: var(--cyan-primary);
+  transform: scale(1.05);
 }
 
 .service-icon svg {
