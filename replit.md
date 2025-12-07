@@ -11,11 +11,14 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 ├── services.html   # Services page (offerings, packages, FAQ)
 ├── contact.html    # Contact page with form
 ├── blog.html       # Blog archive page with category filters
+├── privacy.html    # Privacy Policy page
+├── terms.html      # Terms of Service page
 ├── style.css       # Comprehensive CSS with dark theme, animations
 ├── about.css       # Additional styles for About page
 ├── services.css    # Additional styles for Services page
 ├── contact.css     # Additional styles for Contact page
 ├── blog.css        # Additional styles for Blog archive page
+├── legal.css       # Styles for Privacy Policy and Terms pages
 ├── script.js       # JavaScript for animations and interactivity
 ├── contact.js      # Contact form handling
 ├── blog.js         # Blog filtering and search functionality
