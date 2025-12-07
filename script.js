@@ -1,145 +1,189 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-  const navLinks = document.querySelector('.nav-links');
-  const navCta = document.querySelector('.nav-cta');
-  const navbar = document.querySelector('.navbar');
-  
-  const revealElements = document.querySelectorAll('.portfolio-card, .service-card, .testimonial-card, .process-step, .problem-content, .solution-content');
-  
-  revealElements.forEach(el => {
-    el.classList.add('reveal');
-  });
+document.addEventListener('DOMContentLoaded', () => {
+  initScrollProgress();
+  initScrollReveal();
+  initTiltEffect();
+  initMobileMenu();
+  initSmoothHover();
+});
 
+function initScrollProgress() {
+  const navbar = document.querySelector('.navbar');
+  if (!navbar) return;
+  
+  let progressBar = document.querySelector('.scroll-progress');
+  if (!progressBar) {
+    progressBar = document.createElement('div');
+    progressBar.className = 'scroll-progress';
+    navbar.appendChild(progressBar);
+  }
+  
+  function updateProgress() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollTop / docHeight) * 100;
+    progressBar.style.width = `${Math.min(progress, 100)}%`;
+  }
+  
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  updateProgress();
+}
+
+function initScrollReveal() {
   const observerOptions = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.1
+    rootMargin: '0px 0px -80px 0px',
+    threshold: 0.15
   };
-
+  
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('active');
+        entry.target.classList.add('visible');
+        if (!entry.target.classList.contains('keep-observing')) {
+          observer.unobserve(entry.target);
+        }
       }
     });
   }, observerOptions);
-
-  revealElements.forEach(el => {
-    observer.observe(el);
-  });
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-      navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-      navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-    } else {
-      navbar.style.background = 'rgba(255, 255, 255, 0.9)';
-      navbar.style.boxShadow = 'none';
+  
+  const animatedElements = document.querySelectorAll('.anim-fade-up, .anim-scale-in, .anim-slide-left, .anim-slide-right, .reveal');
+  animatedElements.forEach(el => observer.observe(el));
+  
+  document.querySelectorAll('.section-header').forEach(header => {
+    if (!header.classList.contains('anim-fade-up')) {
+      header.classList.add('anim-fade-up');
+      observer.observe(header);
     }
   });
-
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#' || href.length <= 1) {
-        return;
-      }
-      
-      try {
-        const target = document.querySelector(href);
-        if (target) {
-          e.preventDefault();
-          const headerOffset = 80;
-          const elementPosition = target.getBoundingClientRect().top;
-          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-          window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth'
-          });
-          
-          if (navLinks && navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
-            if (navCta) navCta.classList.remove('active');
-            mobileMenuBtn.classList.remove('active');
-          }
-        }
-      } catch (err) {
-        return;
-      }
-    });
-  });
-
-  if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-      if (navCta) navCta.classList.toggle('active');
-      mobileMenuBtn.classList.toggle('active');
-    });
-  }
-
-  const statNumbers = document.querySelectorAll('.stat-number');
   
-  const animateValue = (element, start, end, duration, suffix = '') => {
-    let startTimestamp = null;
-    const step = (timestamp) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-      const value = Math.floor(progress * (end - start) + start);
-      element.textContent = value + suffix;
-      if (progress < 1) {
-        window.requestAnimationFrame(step);
-      }
-    };
-    window.requestAnimationFrame(step);
-  };
-
-  const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const el = entry.target;
-        const text = el.textContent;
-        
-        if (text.includes('+')) {
-          const num = parseInt(text.replace(/\D/g, ''));
-          animateValue(el, 0, num, 2000, '+');
-        } else if (text.includes('%')) {
-          const num = parseInt(text.replace(/\D/g, ''));
-          animateValue(el, 0, num, 2000, '%');
-        } else if (text.includes('x')) {
-          const num = parseInt(text.replace(/\D/g, ''));
-          animateValue(el, 0, num, 2000, 'x');
-        }
-        
-        statsObserver.unobserve(el);
-      }
-    });
-  }, { threshold: 0.5 });
-
-  statNumbers.forEach(stat => {
-    statsObserver.observe(stat);
+  document.querySelectorAll('.service-card, .portfolio-card, .testimonial-card, .process-step').forEach((card, index) => {
+    if (!card.classList.contains('anim-fade-up')) {
+      card.classList.add('anim-fade-up');
+      card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    }
   });
+}
 
-  const cards = document.querySelectorAll('.portfolio-card, .service-card, .testimonial-card');
+function initTiltEffect() {
+  const tiltElements = document.querySelectorAll('.service-card, .portfolio-card, .floating-card');
   
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.innerWidth < 768) return;
+  
+  tiltElements.forEach(el => {
+    el.addEventListener('mousemove', (e) => {
+      const rect = el.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
       
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      const rotateX = (y - centerY) / centerY * -5;
+      const rotateY = (x - centerX) / centerX * 5;
+      
+      el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.02)`;
+    });
+    
+    el.addEventListener('mouseleave', () => {
+      el.style.transform = '';
     });
   });
-
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   
-  if (prefersReducedMotion.matches) {
-    document.querySelectorAll('.fade-in, .reveal').forEach(el => {
-      el.style.opacity = '1';
-      el.style.transform = 'none';
-      el.style.animation = 'none';
-    });
+  const mockup = document.querySelector('.mockup-browser');
+  if (mockup) {
+    const heroVisual = document.querySelector('.hero-visual');
+    if (heroVisual) {
+      heroVisual.addEventListener('mousemove', (e) => {
+        const rect = heroVisual.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / centerY * -3;
+        const rotateY = (x - centerX) / centerX * 5;
+        
+        mockup.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+      });
+      
+      heroVisual.addEventListener('mouseleave', () => {
+        mockup.style.transform = 'rotateY(-5deg) rotateX(2deg)';
+      });
+    }
   }
-});
+}
+
+function initMobileMenu() {
+  const mobileBtn = document.querySelector('.mobile-menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  const navCta = document.querySelector('.nav-cta');
+  
+  if (!mobileBtn || !navLinks) return;
+  
+  mobileBtn.addEventListener('click', () => {
+    mobileBtn.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    if (navCta) navCta.classList.toggle('active');
+  });
+  
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileBtn.classList.remove('active');
+      navLinks.classList.remove('active');
+      if (navCta) navCta.classList.remove('active');
+    });
+  });
+}
+
+function initSmoothHover() {
+  const buttons = document.querySelectorAll('.btn-primary');
+  
+  buttons.forEach(btn => {
+    btn.addEventListener('mouseenter', () => {
+      btn.style.transition = 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)';
+    });
+    
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transition = 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)';
+    });
+  });
+  
+  const cards = document.querySelectorAll('.service-card, .portfolio-card, .testimonial-card');
+  cards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      const icon = card.querySelector('.service-icon');
+      if (icon) {
+        icon.style.transform = 'scale(1.1) rotate(5deg)';
+      }
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      const icon = card.querySelector('.service-icon');
+      if (icon) {
+        icon.style.transform = '';
+      }
+    });
+  });
+}
+
+let ticking = false;
+window.addEventListener('scroll', () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const scrolled = window.scrollY;
+      
+      if (window.innerWidth >= 768) {
+        const heroBg = document.querySelector('.hero-bg');
+        if (heroBg && scrolled < window.innerHeight) {
+          heroBg.style.transform = `translateY(${scrolled * 0.3}px)`;
+        }
+      }
+      
+      ticking = false;
+    });
+    ticking = true;
+  }
+}, { passive: true });
