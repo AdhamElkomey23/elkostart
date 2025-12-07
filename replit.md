@@ -6,8 +6,10 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 ## Project Structure
 ```
 /
-├── index.html      # Main HTML structure with all sections
+├── index.html      # Main homepage with all sections
+├── about.html      # About page (team, values, approach)
 ├── style.css       # Comprehensive CSS with dark theme, animations
+├── about.css       # Additional styles for About page
 ├── script.js       # JavaScript for animations and interactivity
 └── replit.md       # This documentation file
 ```
