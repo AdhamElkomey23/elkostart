@@ -1,25 +1,25 @@
 :root {
-  --bg-primary: #f0f8ff;
-  --bg-secondary: #e8f4fc;
-  --bg-tertiary: #dbeef9;
-  --bg-card: rgba(255, 255, 255, 0.85);
-  --bg-glass: rgba(255, 255, 255, 0.6);
-  --text-primary: #1a2332;
-  --text-secondary: rgba(26, 35, 50, 0.75);
-  --text-tertiary: rgba(26, 35, 50, 0.55);
-  --cyan-primary: #00d4ff;
-  --cyan-light: #4FC3F7;
-  --cyan-dark: #4a90e2;
-  --navy: #1a2332;
-  --accent-primary: #00d4ff;
-  --accent-secondary: #4FC3F7;
-  --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #4a90e2 50%, #1a2332 100%);
-  --accent-glow: rgba(0, 212, 255, 0.35);
-  --border-color: rgba(0, 212, 255, 0.2);
-  --border-accent: rgba(0, 212, 255, 0.45);
-  --shadow-sm: 0 2px 8px rgba(26, 35, 50, 0.1);
-  --shadow-md: 0 4px 20px rgba(26, 35, 50, 0.15);
-  --shadow-lg: 0 8px 40px rgba(26, 35, 50, 0.2);
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-tertiary: #f5f5f5;
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  --bg-dark: #0a0a0a;
+  --text-primary: #0a0a0a;
+  --text-secondary: rgba(10, 10, 10, 0.7);
+  --text-tertiary: rgba(10, 10, 10, 0.5);
+  --text-light: #ffffff;
+  --accent-primary: #6c5ce7;
+  --accent-secondary: #a29bfe;
+  --accent-hot: #fd79a8;
+  --accent-gradient: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 50%, #fd79a8 100%);
+  --accent-glow: rgba(108, 92, 231, 0.4);
+  --navy: #0a0a0a;
+  --border-color: rgba(10, 10, 10, 0.08);
+  --border-accent: rgba(108, 92, 231, 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.12);
   --shadow-glow: 0 0 60px var(--accent-glow);
   --radius-sm: 8px;
   --radius-md: 12px;
@@ -86,30 +86,29 @@ body {
 }
 
 .btn-primary {
-  background: var(--navy);
+  background: var(--accent-gradient);
   color: #ffffff;
   border: none;
-  box-shadow: 0 4px 16px rgba(26, 35, 50, 0.25);
+  box-shadow: 0 4px 20px rgba(108, 92, 231, 0.4);
 }
 
 .btn-primary:hover {
-  background: #2d3a4a;
+  background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 50%, #fd79a8 100%);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 24px rgba(26, 35, 50, 0.35);
+  box-shadow: 0 8px 30px rgba(108, 92, 231, 0.5);
 }
 
 .btn-secondary {
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
   color: var(--navy);
-  border: 1px solid var(--border-accent);
-  backdrop-filter: blur(10px);
+  border: 2px solid var(--navy);
 }
 
 .btn-secondary:hover {
-  background: var(--cyan-primary);
+  background: var(--navy);
   color: #ffffff;
-  border-color: var(--cyan-primary);
+  border-color: var(--navy);
 }
 
 .btn-outline {
@@ -374,14 +373,14 @@ body {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
-  color: var(--cyan-dark);
+  color: var(--accent-primary);
   text-transform: uppercase;
   letter-spacing: 0.2em;
   margin-bottom: 24px;
   padding: 8px 16px;
-  background: rgba(0, 212, 255, 0.08);
+  background: rgba(108, 92, 231, 0.08);
   border-radius: var(--radius-xl);
-  border: 1px solid rgba(0, 212, 255, 0.15);
+  border: 1px solid rgba(108, 92, 231, 0.2);
 }
 
 .hero-subtitle {
@@ -402,7 +401,7 @@ body {
 }
 
 .hero-cta-wrapper .btn-primary {
-  box-shadow: 0 8px 24px rgba(26, 35, 50, 0.3);
+  box-shadow: 0 8px 30px rgba(108, 92, 231, 0.45);
 }
 
 .hero-cta-note {
@@ -520,7 +519,7 @@ body {
 }
 
 .floating-card svg {
-  color: var(--cyan-primary);
+  color: var(--accent-primary);
 }
 
 .card-1 {
@@ -774,11 +773,11 @@ body {
 .solution-content .btn-primary {
   background: #ffffff;
   color: var(--navy);
-  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.25);
 }
 
 .solution-content .btn-primary:hover {
-  background: var(--cyan-primary);
+  background: var(--accent-hot);
   color: #ffffff;
 }
 
@@ -985,7 +984,7 @@ body {
   justify-content: center;
   width: 64px;
   height: 64px;
-  background: var(--navy);
+  background: var(--accent-gradient);
   border: none;
   border-radius: var(--radius-md);
   margin-bottom: 28px;
@@ -994,7 +993,7 @@ body {
 }
 
 .service-card:hover .service-icon {
-  background: var(--cyan-primary);
+  background: linear-gradient(135deg, #fd79a8 0%, #6c5ce7 100%);
   transform: scale(1.05);
 }
 
