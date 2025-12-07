@@ -3,11 +3,12 @@ modules = ["web", "nodejs-20", "python-3.11"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["static-web-server"]
+packages = ["openssl", "postgresql", "static-web-server"]
 
 [deployment]
 publicDir = "/"
-deploymentTarget = "static"
+deploymentTarget = "autoscale"
+run = ["gunicorn", "--bind", "0.0.0.0:5000", "main:app"]
 
 [workflows]
 runButton = "Project"
@@ -32,19 +33,19 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Website"
+args = "Start application"
 
 [[workflows.workflow]]
-name = "Website"
+name = "Start application"
 author = "agent"
-
-[workflows.workflow.metadata]
-outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "python server.py"
 waitForPort = 5000
+
+[workflows.workflow.metadata]
+outputType = "webview"
 
 [[ports]]
 localPort = 80
@@ -53,6 +54,10 @@ externalPort = 5000
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 43129
+externalPort = 3000
 
 [agent]
 expertMode = true
