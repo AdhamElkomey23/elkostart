@@ -9,10 +9,14 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 ├── index.html      # Main homepage with all sections
 ├── about.html      # About page (team, values, approach)
 ├── services.html   # Services page (offerings, packages, FAQ)
+├── contact.html    # Contact page with form
 ├── style.css       # Comprehensive CSS with dark theme, animations
 ├── about.css       # Additional styles for About page
 ├── services.css    # Additional styles for Services page
+├── contact.css     # Additional styles for Contact page
 ├── script.js       # JavaScript for animations and interactivity
+├── contact.js      # Contact form handling
+├── server.py       # Flask backend for contact form & email
 └── replit.md       # This documentation file
 ```
 
