@@ -86,17 +86,17 @@ body {
 }
 
 .btn-primary {
-  background: var(--accent-gradient);
+  background: var(--navy);
   color: #ffffff;
   border: none;
-  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 4px 16px rgba(26, 35, 50, 0.25);
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, #4FC3F7 0%, #00d4ff 50%, #4a90e2 100%);
+  background: #2d3a4a;
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 6px 30px rgba(0, 212, 255, 0.5);
+  box-shadow: 0 6px 24px rgba(26, 35, 50, 0.35);
 }
 
 .btn-secondary {
@@ -402,7 +402,7 @@ body {
 }
 
 .hero-cta-wrapper .btn-primary {
-  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.35);
+  box-shadow: 0 8px 24px rgba(26, 35, 50, 0.3);
 }
 
 .hero-cta-note {
