@@ -14,12 +14,12 @@
 
 .filter-btn {
   padding: 12px 24px;
-  background: transparent;
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
-  border-radius: 0;
+  border-radius: var(--radius-lg);
   font-family: var(--font-body);
   font-size: 0.8rem;
-  font-weight: 400;
+  font-weight: 500;
   color: var(--text-secondary);
   cursor: pointer;
   transition: all var(--transition-base);
@@ -29,9 +29,9 @@
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--gold-primary);
-  color: #0a0a0a;
-  border-color: var(--gold-primary);
+  background: var(--accent-gradient);
+  color: #ffffff;
+  border-color: var(--cyan-primary);
 }
 
 .work-portfolio {
@@ -45,9 +45,9 @@
 }
 
 .project-card {
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
-  border-radius: 0;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: all var(--transition-base);
   opacity: 1;
@@ -124,7 +124,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(10, 10, 10, 0.9);
+  background: rgba(26, 35, 50, 0.9);
   opacity: 0;
   transition: opacity var(--transition-base);
 }
@@ -135,20 +135,21 @@
 
 .view-project {
   padding: 14px 32px;
-  background: var(--gold-primary);
-  color: #0a0a0a;
+  background: var(--accent-gradient);
+  color: #ffffff;
   font-size: 0.85rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  border: 1px solid var(--gold-primary);
+  border: none;
+  border-radius: var(--radius-md);
   transition: all var(--transition-base);
 }
 
 .project-card:hover .view-project {
-  background: transparent;
-  color: var(--gold-light);
-  border-color: var(--gold-light);
+  background: linear-gradient(135deg, #4FC3F7 0%, #00d4ff 100%);
+  color: #ffffff;
+  transform: translateY(-2px);
 }
 
 .project-content {
@@ -168,7 +169,8 @@
 
 .project-category {
   font-size: 0.75rem;
-  color: var(--gold-primary);
+  color: var(--cyan-dark);
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
@@ -212,8 +214,11 @@
 .project-stat .stat-value {
   font-family: var(--font-heading);
   font-size: 1.8rem;
-  font-weight: 500;
-  color: var(--gold-primary);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .project-stat .stat-label {
@@ -231,9 +236,9 @@
 
 .tag {
   padding: 8px 16px;
-  background: transparent;
+  background: rgba(0, 212, 255, 0.1);
   border: 1px solid var(--border-color);
-  border-radius: 0;
+  border-radius: var(--radius-md);
   font-size: 0.7rem;
   color: var(--text-tertiary);
   text-transform: uppercase;
@@ -248,7 +253,7 @@
 
 .work-cta {
   padding: 120px 0;
-  background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(201, 169, 98, 0.08), transparent),
+  background: radial-gradient(ellipse 80% 50% at 50% 50%, rgba(0, 212, 255, 0.12), transparent),
     var(--bg-secondary);
 }
 

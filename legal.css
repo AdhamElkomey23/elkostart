@@ -10,8 +10,8 @@
   position: absolute;
   inset: 0;
   background: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(201, 169, 98, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(201, 169, 98, 0.04), transparent);
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 212, 255, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 60%, rgba(79, 195, 247, 0.08), transparent);
   pointer-events: none;
 }
 
@@ -50,16 +50,17 @@
   position: sticky;
   top: 120px;
   padding: 32px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
 }
 
 .legal-nav h4 {
   font-family: var(--font-heading);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 20px;
-  color: var(--gold-primary);
+  color: var(--cyan-dark);
 }
 
 .legal-nav ul {
@@ -81,7 +82,7 @@
 }
 
 .legal-nav a:hover {
-  color: var(--gold-primary);
+  color: var(--cyan-primary);
 }
 
 .legal-article {
@@ -140,7 +141,7 @@
 }
 
 .legal-article li::marker {
-  color: var(--gold-primary);
+  color: var(--cyan-primary);
 }
 
 .legal-article li strong {
@@ -149,21 +150,22 @@
 }
 
 .legal-article a {
-  color: var(--gold-primary);
+  color: var(--cyan-primary);
   text-decoration: none;
   transition: color var(--transition-base);
 }
 
 .legal-article a:hover {
-  color: var(--gold-light);
+  color: var(--cyan-light);
   text-decoration: underline;
 }
 
 .contact-info {
   margin-top: 24px;
   padding: 24px;
-  background: var(--bg-tertiary);
+  background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
 }
 
 .contact-info p {

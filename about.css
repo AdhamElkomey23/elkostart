@@ -59,8 +59,9 @@
 .story-image-placeholder {
   width: 100%;
   aspect-ratio: 4/3;
-  background: linear-gradient(135deg, rgba(201, 169, 98, 0.08) 0%, rgba(201, 169, 98, 0.02) 100%);
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(79, 195, 247, 0.05) 100%);
   border: 1px solid var(--border-accent);
+  border-radius: var(--radius-lg);
 }
 
 .story-stat-card {
@@ -68,9 +69,11 @@
   bottom: -30px;
   right: -30px;
   padding: 24px 32px;
-  background: rgba(10, 10, 10, 0.95);
+  background: rgba(255, 255, 255, 0.95);
   border: 1px solid var(--border-accent);
   text-align: center;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
 }
 
 .stat-big {
@@ -78,7 +81,7 @@
   font-family: var(--font-heading);
   font-size: 2.5rem;
   font-weight: 500;
-  color: var(--gold-primary);
+  color: var(--cyan-primary);
   line-height: 1;
 }
 
@@ -116,10 +119,11 @@
 
 .team-card {
   padding: 40px 30px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
   text-align: center;
   transition: all var(--transition-base);
+  border-radius: var(--radius-lg);
 }
 
 .team-card:hover {
@@ -133,12 +137,13 @@
   width: 80px;
   height: 80px;
   margin: 0 auto 24px;
-  background: transparent;
-  border: 1px solid var(--border-accent);
+  background: var(--accent-gradient);
+  border: none;
+  border-radius: 50%;
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--gold-primary);
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .team-name {
@@ -151,10 +156,11 @@
 .team-role {
   display: block;
   font-size: 0.75rem;
-  color: var(--gold-primary);
+  color: var(--cyan-dark);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   margin-bottom: 16px;
+  font-weight: 600;
 }
 
 .team-bio {
@@ -188,9 +194,10 @@
 
 .approach-card {
   padding: 40px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
   transition: all var(--transition-base);
+  border-radius: var(--radius-lg);
 }
 
 .approach-card:hover {
@@ -200,8 +207,11 @@
 .approach-number {
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--gold-primary);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   margin-bottom: 20px;
   line-height: 1;
 }
@@ -251,9 +261,10 @@
   display: flex;
   gap: 24px;
   padding: 40px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
   transition: all var(--transition-base);
+  border-radius: var(--radius-lg);
 }
 
 .value-item:hover {
@@ -267,9 +278,10 @@
   justify-content: center;
   width: 56px;
   height: 56px;
-  background: transparent;
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.15) 0%, rgba(79, 195, 247, 0.08) 100%);
   border: 1px solid var(--border-accent);
-  color: var(--gold-primary);
+  border-radius: var(--radius-md);
+  color: var(--cyan-primary);
 }
 
 .value-title {
@@ -331,7 +343,7 @@
 .different-list svg {
   flex-shrink: 0;
   margin-top: 4px;
-  color: var(--gold-primary);
+  color: var(--cyan-primary);
 }
 
 .different-list strong {
@@ -347,10 +359,11 @@
 
 .stat-card {
   padding: 40px;
-  background: var(--bg-card);
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
   text-align: center;
   transition: all var(--transition-base);
+  border-radius: var(--radius-lg);
 }
 
 .stat-card:hover {
@@ -361,8 +374,11 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--gold-primary);
+  font-weight: 700;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
   margin-bottom: 8px;
 }
@@ -383,7 +399,7 @@
 }
 
 .nav-links a.active {
-  color: var(--gold-primary);
+  color: var(--cyan-dark);
 }
 
 .nav-links a.active::after {
