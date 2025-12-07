@@ -6,34 +6,13 @@ import json
 app = Flask(__name__, static_folder='.', static_url_path='')
 
 def get_resend_credentials():
-    hostname = os.environ.get('REPLIT_CONNECTORS_HOSTNAME')
-    repl_identity = os.environ.get('REPL_IDENTITY')
-    web_repl_renewal = os.environ.get('WEB_REPL_RENEWAL')
-    
-    if repl_identity:
-        x_replit_token = f'repl {repl_identity}'
-    elif web_repl_renewal:
-        x_replit_token = f'depl {web_repl_renewal}'
-    else:
-        raise Exception('X_REPLIT_TOKEN not found for repl/depl')
-    
-    response = requests.get(
-        f'https://{hostname}/api/v2/connection?include_secrets=true&connector_names=resend',
-        headers={
-            'Accept': 'application/json',
-            'X_REPLIT_TOKEN': x_replit_token
-        }
-    )
-    
-    data = response.json()
-    connection_settings = data.get('items', [None])[0]
-    
-    if not connection_settings or not connection_settings.get('settings', {}).get('api_key'):
-        raise Exception('Resend not connected')
+    api_key = os.environ.get('RESEND_API_KEY')
+    if not api_key:
+        raise Exception('RESEND_API_KEY not found in environment variables')
     
     return {
-        'api_key': connection_settings['settings']['api_key'],
-        'from_email': connection_settings['settings'].get('from_email', 'onboarding@resend.dev')
+        'api_key': api_key,
+        'from_email': 'onboarding@resend.dev'
     }
 
 @app.route('/')
