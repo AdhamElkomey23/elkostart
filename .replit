@@ -54,9 +54,6 @@ externalPort = 5000
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 35235
-
 [agent]
 expertMode = true
 integrations = ["resend:1.0.0"]
