@@ -51,6 +51,10 @@ def terms():
 def project_techflow():
     return send_from_directory('.', 'project-techflow.html')
 
+@app.route('/project-luxury-estates')
+def project_luxury_estates():
+    return send_from_directory('.', 'project-luxury-estates.html')
+
 @app.route('/<path:path>')
 def serve_static(path):
     if os.path.exists(path):
