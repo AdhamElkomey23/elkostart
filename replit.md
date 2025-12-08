@@ -36,7 +36,18 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 6. **Testimonials** - 3 client testimonials with ratings
 7. **Process Overview** - 4-step process visualization
 8. **Final CTA Section** - Strong call-to-action with trust signals
-9. **Footer** - Navigation, social links, legal
+9. **Footer** - Global component with logo image, navigation, social links, legal
+
+## Global Footer Component
+The footer is standardized across all pages with the following structure:
+- **Logo**: Image logo (attached_assets/Untitled_design-Picsart-BackgroundRemover_1765146442896.png)
+- **Tagline**: "We build websites that actually get you customers."
+- **Footer Columns**:
+  - Company: Case Studies, About Us, Blog, Contact
+  - Services: Web Design, E-commerce, Branding, SEO & Performance
+  - Connect: LinkedIn, Twitter, Instagram, Dribbble
+- **Footer Bottom**: 2025 copyright, Privacy Policy link, Terms of Service link
+- All links use consistent `.html` format (e.g., `about.html` not `/about`)
 
 ## Design System
 - **Colors**: Dark theme (#0a0a0f background) with purple accent gradient (#6366f1 → #8b5cf6)
@@ -66,10 +77,22 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 - Touch-friendly navigation with hamburger menu
 
 ## Running the Project
-The site is served using Python's HTTP server on port 5000:
+The site is served using Flask with Gunicorn on port 5000:
 ```
-python -m http.server 5000 --bind 0.0.0.0
+gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 ```
+
+## All Pages
+- index.html - Homepage
+- about.html - About page
+- services.html - Services page with tabbed interface
+- contact.html - Contact page with form
+- blog.html - Blog archive
+- work.html - Case studies/portfolio
+- privacy.html - Privacy Policy
+- terms.html - Terms of Service
+- project-techflow.html - TechFlow case study
+- project-luxury-estates.html - Luxury Estates case study
 
 ## Key Conversion Features
 - Multiple CTAs throughout the page
