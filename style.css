@@ -318,6 +318,16 @@ body {
   width: 100%;
 }
 
+.nav-links a.active {
+  color: var(--accent-primary);
+  font-weight: 600;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+  background: var(--accent-gradient);
+}
+
 .nav-cta {
   padding: 10px 20px;
   font-size: 0.75rem;
