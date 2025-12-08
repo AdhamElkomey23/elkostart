@@ -313,6 +313,341 @@
     flex-direction: column;
     gap: 16px;
   }
+
+  .page-hero {
+    padding: 140px 0 80px;
+  }
+
+  .page-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .page-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .our-story {
+    padding: 80px 0;
+  }
+
+  .story-grid {
+    gap: 40px;
+  }
+
+  .story-image-placeholder {
+    aspect-ratio: 3/2;
+  }
+
+  .story-stat-card {
+    right: 10px;
+    bottom: -15px;
+    padding: 16px 20px;
+  }
+
+  .stat-big {
+    font-size: 2rem;
+  }
+
+  .stat-desc {
+    font-size: 0.7rem;
+  }
+
+  .our-team {
+    padding: 80px 0;
+  }
+
+  .team-card {
+    padding: 32px 24px;
+  }
+
+  .team-avatar {
+    width: 70px;
+    height: 70px;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .team-name {
+    font-size: 1.2rem;
+  }
+
+  .team-bio {
+    font-size: 0.85rem;
+  }
+
+  .our-approach {
+    padding: 80px 0;
+  }
+
+  .approach-card {
+    padding: 28px 24px;
+  }
+
+  .approach-number {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+
+  .approach-title {
+    font-size: 1.2rem;
+    margin-bottom: 12px;
+  }
+
+  .approach-text {
+    font-size: 0.9rem;
+  }
+
+  .our-values {
+    padding: 80px 0;
+  }
+
+  .values-header {
+    margin-bottom: 40px;
+  }
+
+  .values-grid {
+    gap: 24px;
+  }
+
+  .value-item {
+    padding: 28px 24px;
+  }
+
+  .value-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .value-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .value-title {
+    font-size: 1.2rem;
+  }
+
+  .value-text {
+    font-size: 0.9rem;
+  }
+
+  .why-different {
+    padding: 80px 0;
+  }
+
+  .different-grid {
+    gap: 40px;
+  }
+
+  .different-list {
+    margin-top: 24px;
+  }
+
+  .different-list li {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .stats-grid {
+    gap: 16px;
+  }
+
+  .stat-card {
+    padding: 28px 24px;
+  }
+
+  .stat-card .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-card .stat-label {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero {
+    padding: 120px 0 60px;
+  }
+
+  .page-hero-content {
+    padding: 0 8px;
+  }
+
+  .page-hero-title {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .page-hero-subtitle {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .hero-badge {
+    font-size: 0.65rem;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+  }
+
+  .our-story {
+    padding: 60px 0;
+  }
+
+  .story-content .section-label {
+    font-size: 0.65rem;
+  }
+
+  .story-content .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  .story-content .section-text {
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+  }
+
+  .story-stat-card {
+    position: static;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .stat-big {
+    font-size: 2.5rem;
+  }
+
+  .our-team {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-header .section-label {
+    font-size: 0.65rem;
+    margin-bottom: 12px;
+  }
+
+  .section-header .section-title {
+    font-size: 1.4rem;
+  }
+
+  .section-header .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .team-card {
+    padding: 28px 20px;
+  }
+
+  .our-approach {
+    padding: 60px 0;
+  }
+
+  .approach-card {
+    padding: 24px 20px;
+  }
+
+  .approach-number {
+    font-size: 1.8rem;
+  }
+
+  .approach-title {
+    font-size: 1.1rem;
+  }
+
+  .our-values {
+    padding: 60px 0;
+  }
+
+  .values-header {
+    margin-bottom: 32px;
+  }
+
+  .values-header .section-title {
+    font-size: 1.4rem;
+  }
+
+  .value-item {
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .value-title {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+
+  .why-different {
+    padding: 60px 0;
+  }
+
+  .different-content .section-title {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+  }
+
+  .different-content .section-text {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  .different-list {
+    margin-top: 20px;
+  }
+
+  .different-list li {
+    gap: 12px;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+  }
+
+  .different-list svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stat-card {
+    padding: 24px 20px;
+  }
+
+  .stat-card .stat-number {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+  }
+
+  .stat-card .stat-label {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .page-hero-title {
+    font-size: 1.4rem;
+  }
+
+  .page-hero-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .story-content .section-title {
+    font-size: 1.25rem;
+  }
+
+  .section-header .section-title {
+    font-size: 1.25rem;
+  }
+
+  .approach-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-card .stat-number {
+    font-size: 1.6rem;
+  }
 }
 
 .why-different {
