@@ -2,6 +2,7 @@
   position: relative;
   padding: 180px 0 120px;
   overflow: hidden;
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.08) 0%, rgba(244, 114, 182, 0.06) 40%, rgba(139, 92, 246, 0.03) 80%, rgba(255, 255, 255, 0) 100%);
 }
 
 .page-hero-content {
@@ -99,7 +100,7 @@
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  
+
   .story-stat-card {
     right: 20px;
     bottom: -20px;
@@ -124,6 +125,7 @@
   text-align: center;
   transition: all var(--transition-base);
   border-radius: var(--radius-lg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .team-card:hover {
@@ -198,6 +200,7 @@
   border: 1px solid var(--border-color);
   transition: all var(--transition-base);
   border-radius: var(--radius-lg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .approach-card:hover {
@@ -265,6 +268,7 @@
   border: 1px solid var(--border-color);
   transition: all var(--transition-base);
   border-radius: var(--radius-lg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .value-item:hover {
@@ -364,6 +368,7 @@
   text-align: center;
   transition: all var(--transition-base);
   border-radius: var(--radius-lg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 .stat-card:hover {

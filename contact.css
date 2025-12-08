@@ -1,6 +1,26 @@
 .contact-section {
-  padding: 100px 0 120px;
-  border-top: 1px solid var(--border-color);
+  padding: 100px 0 60px;
+  background: linear-gradient(180deg, rgba(139, 92, 246, 0.03) 0%, rgba(255, 255, 255, 1) 20%, #ffffff 100%);
+}
+
+.map-section {
+  padding: 60px 0 120px;
+  background: #ffffff;
+}
+
+.map-container {
+  width: 100%;
+  height: 450px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 4px 16px rgba(139, 92, 246, 0.06);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .contact-grid {
@@ -24,10 +44,13 @@
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   transition: all var(--transition-base);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(139, 92, 246, 0.04);
 }
 
 .info-card:hover {
   border-color: var(--border-accent);
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.12), 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 .info-card.highlight {
@@ -95,6 +118,13 @@
   background: rgba(255, 255, 255, 0.9);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06), 0 2px 8px rgba(139, 92, 246, 0.04);
+  transition: all var(--transition-base);
+}
+
+.social-links:hover {
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.12), 0 4px 16px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
 }
 
 .social-links h4 {
