@@ -8,7 +8,7 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 /
 ├── index.html      # Main homepage with all sections
 ├── about.html      # About page (team, values, approach)
-├── services.html   # Services page (offerings, packages, FAQ)
+├── services.html   # Services page with tabbed interface (6 services + custom quote form)
 ├── contact.html    # Contact page with form
 ├── blog.html       # Blog archive page with category filters
 ├── privacy.html    # Privacy Policy page
@@ -22,6 +22,7 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 ├── script.js       # JavaScript for animations and interactivity
 ├── contact.js      # Contact form handling
 ├── blog.js         # Blog filtering and search functionality
+├── services.js     # Services page tab switching and form handling
 ├── server.py       # Flask backend for contact form & email
 └── replit.md       # This documentation file
 ```
