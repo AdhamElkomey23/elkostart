@@ -58,7 +58,7 @@ def serve_static(path):
     return send_from_directory('.', 'index.html')
 
 @app.route('/api/contact', methods=['POST'])
-def contact():
+def contact_api():
     try:
         data = request.json
         
