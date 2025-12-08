@@ -57,10 +57,19 @@ function initScrollReveal() {
     }
   });
   
-  document.querySelectorAll('.service-card, .portfolio-card, .testimonial-card, .process-step').forEach((card, index) => {
+  document.querySelectorAll('.service-card, .portfolio-card, .testimonial-card').forEach((card, index) => {
     if (!card.classList.contains('anim-fade-up')) {
       card.classList.add('anim-fade-up');
       card.style.transitionDelay = `${index * 0.1}s`;
+      observer.observe(card);
+    }
+  });
+  
+  // Process steps with faster, lighter delays
+  document.querySelectorAll('.process-step').forEach((card, index) => {
+    if (!card.classList.contains('anim-fade-up')) {
+      card.classList.add('anim-fade-up');
+      card.style.transitionDelay = `${index * 0.05}s`;
       observer.observe(card);
     }
   });

@@ -1996,6 +1996,10 @@ body {
   transform: translateY(0);
 }
 
+.process-step {
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
 /* Modern 2024-2025 Animation Utilities */
 
 /* Scroll Reveal Animations */
