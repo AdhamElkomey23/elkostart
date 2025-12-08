@@ -69,29 +69,6 @@
   transform: translateY(-4px);
 }
 
-.project-card.featured {
-  grid-column: 1 / -1;
-}
-
-.project-card.featured .project-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 50px;
-}
-
-.project-card.featured .project-stats {
-  grid-column: 2;
-  grid-row: 1;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.project-card.featured .project-tags {
-  grid-column: 1 / -1;
-}
-
 .project-link {
   display: block;
   text-decoration: none;
@@ -102,10 +79,6 @@
   position: relative;
   height: 400px;
   overflow: hidden;
-}
-
-.project-card.featured .project-image {
-  height: 500px;
 }
 
 .project-placeholder {
