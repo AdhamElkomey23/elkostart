@@ -53,20 +53,69 @@
         </div>
       </div>
       <div class="hero-visual fade-in">
-        <div class="hero-mockup">
-          <div class="mockup-browser">
-            <div class="browser-header">
-              <div class="browser-dots">
-                <span></span>
-                <span></span>
-                <span></span>
+        <div class="hero-transformation">
+          <div class="transformation-toggle">
+            <button class="toggle-btn active" data-view="before">Before</button>
+            <button class="toggle-btn" data-view="after">After</button>
+          </div>
+          
+          <div class="mockup-container">
+            <div class="mockup-browser transformation-before active">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="browser-address">oldsite.com</div>
               </div>
-              <div class="browser-address">www.yoursite.com</div>
+              <div class="browser-content">
+                <div class="old-site-preview">
+                  <div class="old-header">
+                    <div class="old-logo">LOGO</div>
+                    <div class="old-nav">
+                      <span>Home</span>
+                      <span>About</span>
+                      <span>Contact</span>
+                    </div>
+                  </div>
+                  <div class="old-hero">
+                    <div class="old-text-block"></div>
+                    <div class="old-text-block short"></div>
+                    <div class="old-button">Click Here</div>
+                  </div>
+                  <div class="old-content">
+                    <div class="old-box"></div>
+                    <div class="old-box"></div>
+                    <div class="old-box"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="mockup-label label-before">Outdated & Slow</div>
             </div>
-            <div class="browser-content">
-              <div class="mockup-preview"></div>
+            
+            <div class="mockup-browser transformation-after">
+              <div class="browser-header">
+                <div class="browser-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="browser-address">yoursite.com</div>
+              </div>
+              <div class="browser-content">
+                <img src="attached_assets/screencapture-limoroyalclass-2025-12-07-05_44_44_1765079243966.png" alt="Modern Website" class="real-site-preview">
+              </div>
+              <div class="mockup-label label-after">Modern & Converting</div>
             </div>
           </div>
+
+          <div class="transformation-arrow">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </div>
+          
           <div class="floating-card card-1">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="23,6 13.5,15.5 8.5,10.5 1,18"></polyline>

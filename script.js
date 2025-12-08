@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTiltEffect();
   initMobileMenu();
   initSmoothHover();
+  initTransformationToggle();
 });
 
 function initScrollProgress() {
@@ -167,6 +168,42 @@ function initSmoothHover() {
       }
     });
   });
+}
+
+function initTransformationToggle() {
+  const toggleBtns = document.querySelectorAll('.toggle-btn');
+  const beforeView = document.querySelector('.transformation-before');
+  const afterView = document.querySelector('.transformation-after');
+  
+  if (!toggleBtns.length || !beforeView || !afterView) return;
+  
+  toggleBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const view = btn.getAttribute('data-view');
+      
+      toggleBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      if (view === 'before') {
+        beforeView.classList.add('active');
+        afterView.classList.remove('active');
+      } else {
+        afterView.classList.add('active');
+        beforeView.classList.remove('active');
+      }
+    });
+  });
+  
+  setInterval(() => {
+    const activeBtn = document.querySelector('.toggle-btn.active');
+    const nextBtn = activeBtn.getAttribute('data-view') === 'before' 
+      ? document.querySelector('.toggle-btn[data-view="after"]')
+      : document.querySelector('.toggle-btn[data-view="before"]');
+    
+    if (nextBtn) {
+      nextBtn.click();
+    }
+  }, 4000);
 }
 
 let ticking = false;
