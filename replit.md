@@ -46,9 +46,24 @@ A premium, modern homepage for Elkostart, a web design agency. The website featu
 
 ## Technical Details
 - Pure HTML/CSS/JS (no framework dependencies)
-- Responsive design (mobile-first breakpoints at 640px, 768px, 900px, 1024px, 1100px)
+- Comprehensive responsive design with breakpoints at:
+  - 1100px (large screens)
+  - 1024px (tablets landscape)
+  - 900px (tablets)
+  - 768px (tablet portrait - stacked layouts)
+  - 640px (large mobile)
+  - 480px (mobile - full mobile optimization)
+  - 360px (small mobile devices)
 - Smooth scroll, intersection observer animations
 - Accessibility: Reduced motion support, semantic HTML
+
+## Mobile Responsive Features
+- Stacked single-column layouts on mobile
+- Appropriately sized typography for touch screens
+- Full-width buttons for easy tapping
+- Optimized section padding and spacing
+- Hidden decorative elements on small screens
+- Touch-friendly navigation with hamburger menu
 
 ## Running the Project
 The site is served using Python's HTTP server on port 5000:
