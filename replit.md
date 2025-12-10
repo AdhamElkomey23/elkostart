@@ -86,13 +86,13 @@ gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 - index.html - Homepage
 - about.html - About page
 - services.html - Services page with tabbed interface
-- contact.html - Contact page with form
+- contact.html - Contact page with form (Netlify Forms)
 - blog.html - Blog archive
-- work.html - Case studies/portfolio
+- work.html - Portfolio gallery (simple demo project showcase)
 - privacy.html - Privacy Policy
 - terms.html - Terms of Service
-- project-techflow.html - TechFlow case study
-- project-luxury-estates.html - Luxury Estates case study
+- project-techflow.html - TechFlow demo project (no fake metrics)
+- project-luxury-estates.html - Luxury Estates demo project (no fake metrics)
 
 ## Key Conversion Features
 - Multiple CTAs throughout the page
