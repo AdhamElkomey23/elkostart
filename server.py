@@ -55,6 +55,10 @@ def project_techflow():
 def project_luxury_estates():
     return send_from_directory('.', 'project-luxury-estates.html')
 
+@app.route('/blog-post')
+def blog_post():
+    return send_from_directory('.', 'blog-post.html')
+
 @app.route('/<path:path>')
 def serve_static(path):
     if os.path.exists(path):
