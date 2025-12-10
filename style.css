@@ -2516,6 +2516,7 @@ body {
   transition: all var(--transition-base);
   text-decoration: none;
   animation: whatsapp-pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
 }
 
 .whatsapp-float:hover {
@@ -2526,6 +2527,7 @@ body {
 .whatsapp-float svg {
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
@@ -2583,10 +2585,25 @@ body {
   .whatsapp-float svg {
     width: 28px;
     height: 28px;
+    flex-shrink: 0;
   }
   
   .whatsapp-tooltip {
     display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-float {
+    bottom: 80px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+  }
+  
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
   }
 }
 
