@@ -468,7 +468,7 @@
   
   .blog-filters {
     padding: 24px 0;
-    top: 70px;
+    top: 60px;
   }
   
   .filters-wrapper {
@@ -619,6 +619,7 @@
   
   .blog-filters {
     padding: 20px 0;
+    top: 60px;
   }
   
   .category-filters {
