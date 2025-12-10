@@ -15,29 +15,14 @@ document.addEventListener('DOMContentLoaded', function() {
     btnLoading.style.display = 'flex';
     submitBtn.disabled = true;
 
-    const formData = {
-      firstName: document.getElementById('firstName').value,
-      lastName: document.getElementById('lastName').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value,
-      company: document.getElementById('company').value,
-      service: document.getElementById('service').value,
-      budget: document.getElementById('budget').value,
-      message: document.getElementById('message').value,
-      timeline: document.getElementById('timeline').value,
-      newsletter: document.querySelector('input[name="newsletter"]').checked
-    };
+    const formData = new FormData(form);
 
     try {
-      const response = await fetch('/api/contact', {
+      const response = await fetch('/', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
       });
-
-      const result = await response.json();
 
       if (response.ok) {
         form.style.display = 'none';

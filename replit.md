@@ -100,3 +100,11 @@ gunicorn --bind 0.0.0.0:5000 --reuse-port --reload main:app
 - Clear value proposition in hero
 - Results-focused portfolio cards
 - No-obligation messaging in final CTA
+
+## Netlify Deployment Notes
+- **Contact Form**: Configured to use Netlify Forms (not Resend/backend email)
+- Form has `data-netlify="true"` and `netlify-honeypot="bot-field"` for spam protection
+- Submissions will appear in Netlify dashboard under Forms section
+- 100 free submissions/month on Netlify free tier
+- For local development, the Flask server still works but form submissions won't send
+- When deploying to Netlify, remove or ignore server.py and main.py (static files only)
