@@ -1,0 +1,247 @@
+# ELKOSTART - ABOUT US PAGE CONTENT
+
+---
+
+## HERO SECTION
+
+### Main Headline:
+**We're Not Just Web Designers.**  
+**We're Lead Generation Partners.**
+
+### Subheadline:
+Every business deserves a website that doesn't just look good—it converts visitors into qualified leads and paying clients. That's exactly what we build.
+
+---
+
+## SECTION 1: FROM CHALLENGE TO SOLUTION
+
+### Heading:
+**From Outdated Websites to Lead Machines**
+
+### Body Copy:
+
+Most business owners we meet have the same problem: they have great services, strong reputations, but websites that don't capture leads or convert visitors into clients.
+
+In 2024, we built our first automated lead-generation website for a real estate agency. The result? A 40% increase in qualified inquiries within 6 weeks. We realized that businesses don't need "just another website"—they need complete lead generation systems.
+
+Since then, we've expanded to work with construction companies, roofing contractors, service providers, and local businesses across the US, Canada, and UK. We don't just build pages—we build systems that turn your online presence into your most powerful sales tool.
+
+Today, we're a specialized team that creates advanced, high-converting websites with built-in automation, CRM integration, and follow-up systems that work while you sleep.
+
+---
+
+## SECTION 2: MEET THE TEAM
+
+### Heading:
+**Meet the People Behind the Pixels**
+
+### Subheading:
+A dedicated team obsessed with turning good businesses into industry leaders through powerful digital systems.
+
+---
+
+### Team Member 1:
+**Adhm Elkomey**  
+*Founder & Lead Developer*
+
+I build automated lead-generation systems and handle development, strategy, and everything in between.
+
+---
+
+### Team Member 2:
+**Marwan Elkomey**  
+*Content Creator & Web Designer*
+
+I create visual identities and web designs that make your brand stand out and convert.
+
+---
+
+### Team Member 3:
+**Mariam Elkomey**  
+*Designer & Marketing Strategist*
+
+I design marketing strategies and compelling visuals that turn your traffic into paying clients.
+
+---
+
+### Team Member 4:
+**Adam Glal**  
+*SEO Specialist & Content Creator*
+
+I optimize your website to rank higher and create content that drives consistent organic traffic.
+
+---
+
+## SECTION 3: HOW WE WORK
+
+### Heading:
+**How We Work**
+
+### Subheading:
+Simple. Fast. Focused. No endless back-and-forth. Just results.
+
+---
+
+### Step 01: Strategy Before Screens
+**We analyze your business goals first.**
+
+Before we design a single page, we understand your target audience, your competitors, and what makes you different. We map out the entire lead generation flow so every element has a purpose.
+
+---
+
+### Step 02: Collaboration, Not Handoffs
+**You're involved every step of the way.**
+
+We don't disappear for weeks. You'll see progress updates, review designs, and give feedback throughout the process. This is your business—we build it with you, not for you.
+
+---
+
+### Step 03: Quality Over Speed
+**We build it right the first time.**
+
+We don't cut corners. Every website is mobile-optimized, fast-loading, SEO-ready, and tested across devices. You get a system that works perfectly from day one.
+
+---
+
+### Step 04: Results-Obsessed Launch
+**We measure success by your growth.**
+
+After launch, we track performance: lead capture rates, form submissions, traffic sources, and conversions. We optimize based on data, not guesses.
+
+---
+
+## SECTION 4: WHAT WE STAND FOR
+
+### Heading:
+**What We Stand For**
+
+---
+
+### Value 1: Radical Honesty
+**Icon: 💬**
+
+We tell you what you need to hear—not what you want to hear. If something won't work, we'll say it. We're consultants first, designers second.
+
+---
+
+### Value 2: Thoughtful Craft
+**Icon: 🎨**
+
+Every design choice serves a purpose. Every color, button, and headline is intentional. We don't follow trends—we build what converts.
+
+---
+
+### Value 3: Client Partnership
+**Icon: 🤝**
+
+You're not a project number. You're a partner. We're invested in your success because when you grow, we grow. Simple as that.
+
+---
+
+### Value 4: Continuous Improvement
+**Icon: 📈**
+
+Launch day isn't the finish line—it's the starting line. We monitor, test, and optimize so your website gets better with time, not outdated.
+
+---
+
+## SECTION 5: WHAT MAKES US DIFFERENT
+
+### Heading:
+**What Makes Us Different**
+
+### Subheading:
+We're not your typical "pretty website" agency. Here's what actually sets us apart:
+
+---
+
+### Stats Box 1:
+**150+**  
+Hours saved per client through automation
+
+---
+
+### Stats Box 2:
+**98%**  
+Client satisfaction rate
+
+---
+
+### Stats Box 3:
+**5x**  
+Average increase in qualified leads
+
+---
+
+### Stats Box 4:
+**72hr**  
+Average response time to client requests
+
+---
+
+### Differentiator 1:
+**Same-Team Only** — No junior devs working on your project while seniors sell. The people you talk to are the people who build.
+
+---
+
+### Differentiator 2:
+**Full Transparency** — You see our process, timelines, and reasoning behind every decision. No black boxes.
+
+---
+
+### Differentiator 3:
+**Automation Experts** — We don't just build websites. We build automated systems using n8n, CRMs, AI chatbots, and workflows that generate leads while you sleep.
+
+---
+
+### Differentiator 4:
+**Results-Focused Pricing** — We price based on value, not hours. You're paying for a system that increases revenue, not just "a website."
+
+---
+
+### Differentiator 5:
+**Direct Communication** — No project managers playing telephone. You work directly with the people building your site.
+
+---
+
+### Differentiator 6:
+**Post-Launch Support** — We don't vanish after launch. We monitor performance, provide updates, and make improvements based on real data.
+
+---
+
+## SECTION 6: CALL TO ACTION
+
+### Heading:
+**Ready to Work Together?**
+
+### Subheading:
+Let's build a website that doesn't just sit there—one that actively brings you clients every single day.
+
+---
+
+### Primary CTA Button:
+**Get Your Free Homepage Preview**
+
+### Secondary CTA Button:
+**Book a 15-Min Strategy Call**
+
+---
+
+## FOOTER TAGLINE:
+**ELKOSTART**  
+We don't build websites. We build lead machines.
+
+---
+
+**© 2024 Elkostart. All rights reserved.**
+
+**Quick Links:**
+- About Us
+- Services
+- Portfolio
+- Contact
+
+**Contact:**
+- Email: hello@elkostart.com
+- WhatsApp: [Your Number]
+- Instagram: @elkostart
