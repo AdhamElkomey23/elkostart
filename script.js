@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initSmoothHover();
   initTransformationToggle();
+  initPreviewModal();
 });
 
 function initScrollProgress() {
@@ -266,3 +267,40 @@ window.addEventListener('scroll', () => {
     ticking = true;
   }
 }, { passive: true });
+
+function initPreviewModal() {
+  const modal = document.querySelector('.preview-modal');
+  if (!modal) return;
+
+  const previewCards = document.querySelectorAll('.preview-card');
+  const closeBtn = document.querySelector('.preview-modal-close');
+
+  previewCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const imageSrc = card.querySelector('.preview-image').src;
+      const modalImage = modal.querySelector('.preview-modal-image');
+      modalImage.src = imageSrc;
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      closeModal();
+    }
+  });
+
+  function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
