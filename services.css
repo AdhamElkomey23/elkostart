@@ -990,3 +990,77 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* Service CTA (replaces pricing) */
+.service-cta {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.service-cta .btn {
+  display: inline-flex;
+}
+
+/* Mobile Responsiveness Fixes */
+html, body {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .tabs-sidebar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  
+  .tabs-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .tabs-content {
+    padding: 24px 16px;
+    overflow-x: hidden;
+    word-wrap: break-word;
+  }
+  
+  .tab-panel-header h2 {
+    font-size: 1.5rem;
+    word-wrap: break-word;
+  }
+  
+  .tab-description {
+    font-size: 0.95rem;
+  }
+  
+  .service-features {
+    padding: 20px 16px;
+  }
+  
+  .service-features ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .additional-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .additional-service-card {
+    padding: 24px 16px;
+  }
+  
+  .services-tabs-section {
+    padding: 40px 0;
+  }
+  
+  .service-tab span {
+    font-size: 0.75rem;
+    line-height: 1.3;
+  }
+}
