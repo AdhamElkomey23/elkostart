@@ -16,20 +16,34 @@ document.addEventListener('DOMContentLoaded', function() {
     submitBtn.disabled = true;
 
     const formData = new FormData(form);
+    
+    const data = {
+      firstName: formData.get('firstName'),
+      lastName: formData.get('lastName'),
+      email: formData.get('email'),
+      phone: formData.get('phone') || 'Not provided',
+      company: formData.get('company') || 'Not provided',
+      service: formData.get('service') || 'Not specified',
+      budget: formData.get('budget') || 'Not specified',
+      message: formData.get('message'),
+      timeline: formData.get('timeline') || 'Not specified',
+      newsletter: formData.get('newsletter') === 'on'
+    };
 
     try {
-      const response = await fetch('/', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
       });
 
-      if (response.ok) {
+      const result = await response.json();
+
+      if (response.ok && result.success) {
         form.style.display = 'none';
         formSuccess.style.display = 'block';
       } else {
-        form.style.display = 'none';
-        formError.style.display = 'block';
+        throw new Error(result.error || 'Failed to send message');
       }
     } catch (error) {
       console.error('Error:', error);
