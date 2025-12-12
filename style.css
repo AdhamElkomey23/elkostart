@@ -3043,3 +3043,71 @@ body {
     margin: 0 auto;
   }
 }
+
+/* WhatsApp Sticky Button */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.35), 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+  transition: all var(--transition-base);
+  animation: whatsappPulse 2s ease-in-out infinite;
+}
+
+.whatsapp-sticky:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 40px rgba(37, 211, 102, 0.45), 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-sticky svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.whatsapp-sticky span {
+  white-space: nowrap;
+}
+
+@keyframes whatsappPulse {
+  0%, 100% {
+    box-shadow: 0 8px 32px rgba(37, 211, 102, 0.35), 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 0 8px 40px rgba(37, 211, 102, 0.5), 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .whatsapp-sticky {
+    bottom: 16px;
+    right: 16px;
+    padding: 12px 18px;
+    font-size: 0.8rem;
+    gap: 8px;
+  }
+  
+  .whatsapp-sticky svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-sticky {
+    padding: 12px 16px;
+    font-size: 0.75rem;
+  }
+}
